@@ -1,64 +1,72 @@
-#h1text
+# The largest heading
 
-= MarkedText
+## The second largest heading
 
-Формат текста с **легковесным форматированием**.
+###### The smallest heading
 
---
+**This is bold text**	
 
-== Принципы
+*This text is italicized*	
 
-+ Синтаксис:
-  - Однозначность
-  - Простота
-  - Единообразность
-+ Внешний вид:
-  - Минимальное влияние на естественный вид текста
-  - Наглядность форматирования
-+ Редактирование:
-  - Независимость от раскладки
-  - Быстрая и надёжная запоминаемость
+~~This was mistaken text~~
 
-== Cравнение с альтернативами
+**This text is _extremely_ important**	
 
-! **Язык**
-  ! **Плюсы**
-    ! **Минусы**
-! MarkedText
-  ! - Удобное редактирование таблиц.
-  ! - Поддержка сложного форматирования внутри ячеек.
-  ! - Простота реализации.
-  ! - Легко запоминающийся консистентный синтаксис.
-  ! - Удобство редактирования в русской раскладке.
-  ! - Колонки не расползаются далеко вправо за горизонтальный скроллинг и не переносятся на новую строку.
-    ! - Не поддерживается пока что никакими сторонними инструментами.
-! MarkDown
-  ! - Широкая поддержка различными инструментами.
-  ! - Наглядное представление таблиц.
-    ! - Сложности с редактированием таблиц.
-    ! - Сильно ограниченное содержимое ячеек.
+***All this text is important***	
 
-== Парсинг
+<sub>This is a subscript text</sub>	
 
-    const res = [ ... $hyoo_marked_line.parse( '**text**' ) ]
-  --$mol_assert_equal( res[0].strong, '**text**' )
-  ++$mol_assert_equal( res[0].marker, '**' )
-  **$mol_assert_equal( res[0].content, 'text' )
+<sup>This is a superscript text</sup>	
 
-== Отзывы
+Use `git status` to list all new.
 
-" " " Типичный пользователь: Нигде не поддерживается, идите в --жопу-- ++Жодино++ с таким синтаксисом!
-" " 
-" " Но мы же программисты, мы можем это исправить.. Для этого даже не надо быть экспертом ни по ;;C++;; , ни по ;;D++;;..
-" 
-" Никому это не нужно (с) Диванный Эксперт
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
 
-Тем не менее, это полезное упражнение в проектировании.
+The background color should be `#ffffff` for light mode and `#0d1117` for dark mode.
 
-== Ссылки
+`#0969DA`	
 
-- Песочница: \\https://marked.hyoo.ru/\\
-- \\Статья о MarkedText\https://github.com/nin-jin/HabHub/issues/39\\
-- \\Парсер на TS\https://github.com/hyoo-ru/marked.hyoo.ru/\\
-- \\Конвертер в HTML на TS\https://github.com/hyoo-ru/marked.hyoo.ru/tree/master/to/html\\
-- ""Результат билда $mol_regexp\https://github.com/hyoo-ru/mam_mol/workflows/mol_regexp/badge.svg""
+`rgb(9, 105, 218)`	
+
+`hsl(212, 92%, 45%)`	
+
+This site was built using [YouTube](https://www.youtube.com/).
+
+![This is an image](https://i.ibb.co/9gmGPRs/giphy.gif)
+
+Lists look like:
+- Danya
+* Daniel
++ Danil
+
+or like:
+1. Danya
+2. Daniel
+3. Danil
+
+or:
+1. First Danya
+   - First Danya
+     - Second Danya
+     
+You can do this:
+- [x] Daniel
+- [ ] Danya
+- [ ] Daniil
+
+Its my acc: @github/nodlnodlnod
+
+@nodlnodlnodl :+1: it's ready to merge! :shipit:
+
+Here is a simple footnote[^1].
+
+[^1]: Here is a simle note.
+
+Use backslash to write \* \*our-new-project\* to \*our-old-project\*.
+
+<!-- This content will not appear in the rendered Markdown -->
