@@ -59,8 +59,6 @@ You can do this:
 - [ ] Danya
 - [ ] Daniil
 
-Its my acc: @github/nodlnodlnod
-
 @nodlnodlnodl :+1: it's ready to merge! :shipit:
 
 Here is a simple footnote[^1].
