@@ -68,3 +68,20 @@ Here is a simple footnote[^1].
 Use backslash to write \* \*our-new-project\* to \*our-old-project\*.
 
 <!-- This content will not appear in the rendered Markdown -->
+
+```diff
+-123-```
+```md
+#123```
+```css
+123```
+```fix
+123```
+```py
+#123```
+```cs
+#123```
+```xl
+'123'```
+```tex
+$$$123$$$```
