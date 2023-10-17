@@ -10,3 +10,4 @@ def mirror_text(a: int, b:int):
 
 if __name__ == "__main__":
     uvicorn.run(app)
+    print("Hello blin")
